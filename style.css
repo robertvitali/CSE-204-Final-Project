@@ -1,0 +1,255 @@
+html,body{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+/* this is the css for the image and the welcome text */
+.welcomeDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100;
+  height: 100vh;
+  background-image: url("Graphics/large_welcome_photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* this is the css for the welcome text all p */
+.welcomeDiv p{
+  font-size: 7vh;
+  color: white;
+}
+/* this is the css for each section's title text */
+.sectionTitle{
+  text-decoration: underline;
+  color: white;
+  font-size: 8vh;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+/* this is the css for the science page */
+.contentDivs{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding:20px;
+  box-sizing: border-box;
+}
+/* this is the css for the flex container for images and text */
+.mediaFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+}
+/* this is the css for the container that contains the image */
+.imageFlexDiv{
+  /* padding-left: 2vw;
+  padding-right: 2vw; */
+  width: 60vw;
+  height: 70vh;
+  align-items: center;
+}
+/*this is the css for the images within the container*/
+.imageFlexDiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* this is the css for the text that is associated with the image */
+.textFlexDiv{
+  display:flex;
+  font-size: 3.2vh;
+  align-items: baseline;
+  color: white;
+  height: 100%;
+  width: 50%;
+}
+/* this is the css for the paragraph within the text flex div */
+.textFlexDiv p{
+  margin: 0;
+}
+/* this is the css for the slide div that contains the photo and the left/right button */
+#slideDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2vw;
+}
+/* this is the css for the left and right buttons */
+.button{
+  width: 6vw;
+  height: 15vh;
+}
+/* this is the div that is the full screen page in the website */
+#Intro{
+  background-color: #339966;
+  font-size: 6vh;
+  color: white;
+}
+/* this is the styling for the title of the intro slide */
+#Intro h1{
+  margin: 0;
+  /* padding-top: 6vh; */
+}
+/* this is the styling for each list item within the intro page */
+#Intro li{
+  padding-top: 3.6vw;
+  padding-bottom: 3.6vw;
+}
+/* last list item */
+#Intro li:last-child{
+  padding-bottom: 0;
+}
+/* this is the css for the science div */
+#science{
+  /* background-color: #00a37f; */
+  background-color: #448062;
+  align-items: center;
+}
+/* this is the css for the titles */
+h1{
+  margin: 0;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  color: white;
+}
+#government{
+  /* background-color: #59bfb3; */
+  background-color: #446280;
+}
+/* css for the text div  */
+/* #governmentTEXTFLEX{
+  width: 100%;
+} */
+/* css for the img div */
+#governmentIMGFLEX{
+  width:50vw;
+}
+/* css for the economics div */
+#economics{
+  /* background-color: #53c5f1; */
+  background-color: #534480;
+}
+/* css for the economics div */
+#economicsCalculator{
+  /* background-color: lightblue; */
+  background-color: #714480;
+}
+/* this is the css for the input field */
+#inputField{
+  width: 30vw;
+  height: 10vh;
+  font-size: 30px;
+}
+/* this is the css for the flex of the input field */
+#econCalcFlex{
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+/* this is the css for the containers that are within the flex of the econ div */
+.econCalcFlexContainer{
+  width: 45vw;
+  align-items: center;
+}
+/* this is the css for the paragraph in the econ div */
+#econOutput{
+  text-align: left;
+  font-size: 3vh;
+  color: white;
+}
+/* this is the css for the list items as links */
+.embed{
+  text-decoration: none;
+  color: white;
+}
+/* this is the css for a dog media */
+.dogPhoto{
+  width: 100vw;
+  height: 80vh;
+  align-items: center;
+  text-align: center;
+  font-size: 4vh;
+  background-color: #804453;
+}
+.dogPhoto p{
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* this is the css for the img */
+#dogeMedia{
+  width: 100vw;
+  height: 60vh;
+  align-items: center;
+  object-fit: contain;
+}
+@media only screen and (max-width:1120px){
+  .textFlexDiv p{
+    font-size: 2.9vh
+  }
+}
+@media only screen and (max-width:1024px){
+  .contentDivs{
+    height: 100%;
+  }
+  .contentDivs:nth-child(1){
+    height: 100vh;
+  }
+  .contentDivs:nth-child(2){
+    height: 100vh;
+  }
+  .contentDivs:nth-child(3){
+    height: 100vh;
+  }
+  .mediaFlex{
+    flex-direction: column;
+  }
+  .imageFlexDiv{
+    width: 80vw;
+    height: 48vh;
+  }
+  .textFlexDiv{
+    width: 100%
+  }
+  .textFlexDiv p{
+    font-size: 2.5vh;
+    width: 100%;
+  }
+  #Intro h1{
+    font-size: 9.5vh;
+    padding-top: 6vw;
+  }
+  #Intro li{
+    font-size: 4vh;
+  }
+
+}
+@media only screen and (max-width: 768px){
+  .contentDivs:nth-child(3){
+    height: 100%;
+  }
+}
+@media only screen and (max-width:500px){
+  .contentDivs:nth-child(1){
+    height: 100%;
+  }
+  .contentDivs:nth-child(3){
+    height: 100%;
+  }
+  .contentDivs:nth-child(6){
+    height: 100%;
+  }
+  .textFlexDiv p{
+    font-size: 20px;
+  }
+}

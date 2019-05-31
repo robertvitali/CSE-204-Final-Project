@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139610396-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139610396-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PVNXLL2');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title></title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVNXLL2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- this is the div that is containing the beginning photo -->
+    <div class="welcomeDiv">
+        <p>Modernize Farming With Cover Crops</p>
+    </div>
+    <!-- this is the div that contains the intro -->
+    <div class="contentDivs" id="Intro">
+      <a name = "Intro"></a>
+      <h1 id = "introTitle">Why are cover crops important?</h1>
+      <ul style="list-style-type:none;">
+        <a class = "embed" href="#economics"><li>Economically beneficial for farmers</li></a>
+        <a class = "embed" href="#science"><li>Decreases the environmental cost of farming</li></a>
+        <a class = "embed" href="#government"><li>Shifts farming to a more sustainable model</li></a>
+      </ul>
+    </div>
+    <!-- this is the div that contains the science information -->
+    <div class="contentDivs" id="science">
+      <a name = "science" id = "s"></a>
+      <h1 class = "sectionTitle" id = "scienceTitle">The Science</h1>
+      <div class="mediaFlex">
+        <div id = "slideDiv">
+          <img class = "button" id = "leftButtonScience" src="Graphics/left.png" alt="">
+          <div class="imageFlexDiv">
+            <img name  = "scienceIMG" src="" alt="">
+          </div>
+          <img class = "button" id = "rightButtonScience" src="Graphics/right.png" alt="">
+        </div>
+        <div class="textFlexDiv">
+          <p id = "scienceTEXT"></p>
+        </div>
+      </div>
+    </div>
+    <!-- this is the div that contains the government programs info -->
+    <div class="contentDivs" id="government">
+      <a name = "government"></a>
+      <h1 class = "sectionTitle" id = "governmentTitle">Government Programs</h1>
+      <div class="mediaFlex">
+        <div class="imageFlexDiv" id = "governmentIMGFLEX">
+          <a class = "pictureLink" href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/ny/technical/engineering/?cid=nrcs144p2_027123" target="_blank">
+            <img name = "governmentIMG" src="Graphics/cornell_img.jpg" alt="">
+          </a>
+        </div>
+        <div class="textFlexDiv" id = "governmentTEXTFLEX">
+          <p id = "governmentTEXT">Nearly every state has a cover crop program endorsed by that respective state’s government. This is primarily because everyone benefits from the implementation of cover crops. In the long run, farmers save money because they don’t need to purchase fertilizer, it better replenishes nutrients deep in the soil and cover crops are also known to increase crop yield over time. State governments are incentivized because they save money from decreased erosion, costing the U.S. $44 billion dollars annually. The graphic is depicts a tool created by Cornell University for farmers in New York to narrow down the types of cover-crops they can grow based on their acreage, growing season, and location. If you wish to explore more, click on the graphic to be redirected.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- this is the div that contains the econ programs info -->
+    <div class="contentDivs" id="economics">
+      <a name = "economics"></a>
+      <h1 class = "sectionTitle" id = "economicsTitle">Economics</h1>
+      <div class="mediaFlex">
+        <div class="imageFlexDiv" id = "economicsIMGFLEX">
+            <a href="https://www.agriculture.com/crops/cover-crops/the-economics-of-cover-crops" target = "_blank">
+              <img class = "pictureLink" name = "economicsIMGFLEX" src="Graphics/Missouri_Graphic.jpg" alt=""></a>
+          </a>
+        </div>
+        <div class="textFlexDiv" id = "economicsTEXTFLEX">
+          <p id = "economicsTEXT">Ken Rulon is one of five fifth-generation owners of a 6,100-acre family farm in Arcadia, Indiana that is part of Rulon Enterprises LLC. Outlined in the data graphic is the economics behind his choice to plant exclusively cover-crops since 1991. It is important to note Rulon has not tilled his land since 1991, yet his fall 2017 ROI is above 250%. Most impressively, his crops showed tremendous drought-resistance. In 2013, Rulon’s corn planted after cover crops yielded 30 more bushels per acre than those planted without cover crops. If you would like to learn more click on the graphic to be redirected.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- this is the div for the economics calculator -->
+    <div class="contentDivs" id="economicsCalculator">
+      <a name = "economicsCalculator"></a>
+      <h1 class = "sectionTitle" id = "economicsCalculatorTITLE">Cover Crop Calc</h1>
+      <div id = "econCalcFlex">
+        <div class="econCalcFlexContainer">
+          <input class = "field" id = "inputField" type="number" oninput = "calculateEcon(this.value)" min = "0" max= "1000000000" placeholder="Enter a dollar value"/>
+        </div>
+        <div class="econCalcFlexContainer" id = "outputFlex">
+          <p id = "econOutput"></p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </body>
+
+  <!-- this is the div for the cute dog photo at the end -->
+  <div class="dogPhoto">
+    <p>I hope you enjoyed my website! :)</p>
+    <img id = "dogeMedia"></img>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+</html>
